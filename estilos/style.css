@@ -1,0 +1,318 @@
+/* Configurações Gerais */
+
+body,html{
+	z-index: 0;
+	overflow-x: hidden !important;
+	width: 100%;
+	height: 100%;
+	margin:0;
+	line-height: 180%;
+	text-align: center;
+	font-family: 'Raleway';
+	font-weight:normal;
+	box-sizing: border-box;
+}
+
+/* Widget do Calendly */
+.calendly-badge-widget{
+	z-index:1!important;
+}
+
+/* Base do site: todas essas imagens irão compor o fundo do site, à medida
+que o usuário for rolando a tela.  */
+
+.parallax1{
+	background-image: url(../imagens/bouquet.jpeg);
+	min-height: 100vh;
+}
+.parallax2{
+	background-image: url(../imagens/flores01.jpg);
+	min-height: 50vh;
+}
+.parallax3{
+	background-image: url(../imagens/flores02.jpg);
+	min-height: 100vh;
+}
+.parallax4{
+	background-image: url(../imagens/flores03.jpg);
+	min-height: 50vh;
+}
+.parallax5{
+	background-image: url(../imagens/flores04.jpg);
+	min-height: 100vh;
+}
+.parallax1, .parallax2, .parallax3, .parallax4, .parallax5{
+	position: relative;
+	opacity: 1;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Barra de navegação*/
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	background-color: #f6f5f7;
+}
+.logo{
+	height:80px;
+}
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+}
+.nav-links a{
+	font-family: 'Raleway';
+	letter-spacing: 3px;
+	color: #24045c;
+	font-size: 14px;
+	text-decoration: none;
+}
+.nav-links li{
+	list-style: none;
+}
+.social{
+	display: flex;
+	justify-content: space-between;
+	width: 8%;
+}
+.burger{
+	display: none;
+	cursor: pointer;
+	background-color: #f6f5f7;
+}
+.burger div{
+	width: 25px;
+	height: 2px;
+	background-color: #24045c;
+	margin: 5px;
+}
+
+/* Frase que é apresentada na página inicial. */
+
+.frase{
+  box-sizing: border-box;
+	position: absolute;
+	top: 38%;
+	width: 100%;
+	left: 0vw;
+	background-color: white;
+	opacity: 0.8;
+	font-size: 25px;
+	padding: 3vw;
+}
+q:before, q:after{
+	content: "";
+}
+.autor{
+	font-style: normal;
+	display: block;
+	font-size: 25px;
+	color: #3f0063;
+}
+
+/* Classes que irão compõem a estrutura básica de todas as seções.*/
+
+.titulo{
+	font-family: 'Bad Script',cursive;
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+}
+.linha{
+	height:2px;
+	background-color: #d5b4db;
+	margin-bottom: 20px;
+	opacity: 0.5;
+}
+section{
+	overflow: auto;
+	padding: 50px 80px;
+	background-color: #f6f5f7;
+}
+
+/* Seção "Sobre Mim" */
+
+.livia{
+	display: block;
+}
+.livia-foto{
+	border-radius: 50%;
+	width: 180px;
+}
+.livia-descricao p{
+	padding-bottom: 5vh;
+	font-size: 20px;
+	color: #24045c;
+}
+.sobre-mim-texto{
+	text-align: left;
+}
+.sobre-mim-texto p{
+	margin-bottom: 20px;
+}
+
+/* Seção "A Psicoterapia" */
+
+.psicoterapia-imagem{
+	width: 90vw;
+	height: auto;
+	padding: 2vw;
+}
+.texto-lateral{
+	display: inline;
+	text-align: left;
+}
+.texto-lateral strong{
+	color: #24045c;
+}
+
+/* Seção "Localização" */
+
+.localizacao{
+  box-sizing: border-box;
+  margin-left: 15%;
+	padding: 5% 5%;
+	padding-top: 30px;
+	background-color: #f6f5f7;
+	width: 70%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.localizacao-endereco{
+	text-align: left;
+	padding-bottom: 15px;
+}
+.fa-map-marker-alt{
+	color: #24045c;
+	display: inline;
+	font-size: 50px;
+}
+#mapa {
+	width:100%;
+  height: 50vh;
+}
+
+/* Seção "Depoimentos" */
+
+.depoimento{
+	/* MEDIDA TEMPORÁRIA (pois ainda não tenho os depoimentos) */
+	/* Padding normal : */
+	padding: 30px;
+	/* Padding temporário : */
+	padding: 150px 30px;
+	max-width: 90%;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #3f0063;
+}
+.depoimento-nome{
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+.botao-anterior{
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	left: 0;
+	color: #3f0063;
+}
+.botao-proximo{
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	right: 0;
+	color: #3f0063;
+}
+
+/* Seção "Especialidades" */
+
+.especialidades-titulo {
+	background-color: #e3d5f0;
+	color: #24045c;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 17px;
+	transition: background-color 1s;
+	margin-bottom: 2px;
+}
+.especialidades-titulo i {
+	float: right;
+}
+.especialidades-conteudo {
+	text-align: left;
+	padding: 0 18px;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+.especialidades-conteudo p{
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+
+/* Footer/rodapé */
+
+.footer{
+	z-index: 2;
+	width: 100%;
+  height: 200px;
+	position: absolute;
+	bottom: 0;
+	background-color: #e9e7ec;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+}
+.footer-logo{
+	width: 200px;
+	padding: 0;
+	height: auto;
+	display: inline;
+}
+.footer ul{
+  padding: 0;
+  margin: 0;
+	display: inline-block;
+	text-decoration: none;
+	list-style:none;
+	text-align: left;
+	background-color: #e9e7ec;
+}
+.footer a{
+	color: black;
+	text-decoration: underline;
+}
+.footer-conteudo{
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	width: 70%;
+}
+.footer-conteudo h3{
+	color: #24045c;
+	margin-bottom: 2px;
+}
+.footer-icon{
+	color: #24045c;
+	margin-right: 5px;
+}
+.divisao{
+  margin: 0 auto;
+	width: 2px;
+	height: 130px;
+	background-color: #867294;
+}

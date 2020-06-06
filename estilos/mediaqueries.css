@@ -1,0 +1,128 @@
+@media screen and (min-height: 1024px) and (orientation : portrait){
+  .parallax4{
+    min-height: 30vh;
+  }
+}
+
+@media screen and (min-width:700px){
+  .psicoterapia-imagem{
+    width: 400px;
+  	float: left;
+  	display: inline;
+  	margin-right: 20px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:1024px){
+	section{
+		padding-right:25px;
+		padding-left: 25px;
+	}
+	.nav-links{
+		width: 80%;
+	}
+	body,html{
+		overflow-x: hidden !important;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width:768px){
+
+	section{
+		padding-right:15px;
+		padding-left: 15px;
+	}
+	.nav-links{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+		z-index: 3;
+		position: absolute;
+		right: 0px;
+    height: calc(100vh - 100px);
+		top: 100px;
+		background-color: #f6f5f7;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+  .social{
+    width: 60%;
+  }
+	.burger{
+		display: block;
+	}
+  .footer-conteudo{
+    width:90%;
+  }
+  .nav-active{
+      transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+@media screen and (max-width:700px){
+  body,html{
+		overflow-x: hidden !important;
+		max-width: 100%;
+	}
+	section{
+		padding-right:10px;
+		padding-left: 10px;
+		text-align: center;
+	}
+  .titulo{
+		font-size: 45px;
+	}
+	.side-text{
+		text-align: center;
+	}
+  .localizacao .titulo{
+		margin-top: 20px;
+	}
+	.localizacao{
+		margin: 0% 5%;
+		width: 90vw;
+	}
+  .divisao{
+		display: none;
+	}
+  .footer-logo{
+    display: none;
+  }
+  .footer-nav{
+    display: none!important;
+  }
+  .footer-contato{
+    position: absolute;
+  }
+}
+
+@media screen and (max-height:700px){
+  #mapa{
+    height:45vh;
+  }
+}
+@media screen and (max-height:600px){
+  #mapa{
+    height:35vh;
+  }
+}
